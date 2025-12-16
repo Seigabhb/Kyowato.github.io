@@ -1,0 +1,74 @@
+.logo{
+    width: 350px;
+    margin: auto;
+    display: block;
+}
+ .head{
+    text-align: center;
+    background-color:cornsilk;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+
+
+.noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main{
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 800px;
+}
+#date{
+    background-color: #e9141e;
+    color: white;
+}
+.emph{
+    color: #e9141e;
+}
+p, h1, h2, h3, h4, h5, h6, a{
+    margin: 0;
+}
+
+nav ul{
+    padding-left: 0;
+}
+
+nav ul li a{
+    text-decoration-line: none !important;
+    font-weight: normal;
+    font-size: 175%;
+    color: black;
+}
+
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+nav li:after{
+    content: "/";
+    margin: 0 0.5em;
+    font-weight: bold;
+    font-size: 175%;
+}
+
+nav li:last-child::after {
+  content: "";
+  margin: 0;
+}
+nav li a:hover{
+    color: blue;
+}
+
+.foot{
+    background-color: cornsilk;
+    height: 200px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 12rem;
+}
