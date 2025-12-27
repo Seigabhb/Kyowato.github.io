@@ -10,11 +10,11 @@ h1, h2, h3, p{
     padding-bottom: 0.5rem;
 }
 
-.main, .policy, .ma{
+.main, .policy{
     text-align: center;
 }
 
-.main h2, .main p, .policy h2, .ma h2{
+.main h2, .main p, .policy h2{
     text-align: left;
 }
 
@@ -27,8 +27,6 @@ h1, h2, h3, p{
 .top{
     background-color: white;
     color: #e9141e;
-}
-.top{
     text-align: center;
     padding: 1rem;
 }
