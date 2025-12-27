@@ -10,11 +10,11 @@ h1, h2, h3, p{
     padding-bottom: 0.5rem;
 }
 
-.main, .policy{
+.main, .policy, .center, .board{
     text-align: center;
 }
 
-.main h2, .main p, .policy h2{
+.main h2, .main p, .policy h2, .board h2{
     text-align: left;
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3, p{
     border-radius: 1rem;
     padding: 1rem;
 }
-.main, .policy, .noti, .mem, .pol{
+.main, .policy, .noti, .mem, .pol, .board{
     background-color: whitesmoke;
     color: #000000;
     padding: 1rem;
@@ -92,9 +92,6 @@ h1, h2, h3{
 .btn:hover{
     border-color: blue;
     color: blue;
-}
-.center{
-    text-align: center;
 }
 .mem-img{
     display: block;
