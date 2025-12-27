@@ -1,169 +1,99 @@
-/* 変数の定義 */
-:root {
-    --main-color: #e9141e;
-    --dark-color: #1a1a1a;
-    --light-bg: #f4f4f4;
-    --white: #ffffff;
-}
-
-/* 全体レイアウト */
 * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Yu Gothiv", "HiraginoKaku", sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--dark-color);
-    background-color: var(--white);
-    line-height: 1.8;
-}
-
-/* ヘッダー */
-header {
-    background: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-img {
-    width: 45px;
-    height: 45px;
-}
-
-.party-name {
-    font-size: 1.4rem;
-    font-weight: 900;
-    color: var(--main-color);
-    letter-spacing: 1px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--dark-color);
-    margin-left: 20px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--main-color);
-}
-
-/* ヒーローエリア */
-.hero {
-    background-color: var(--main-color);
-    background-image: linear-gradient(135deg, var(--main-color) 0%, #b30f16 100%);
-    color: var(--white);
-    padding: 120px 5% 100px;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin: 0;
-    font-weight: 900;
-}
-
-.slogan {
-    font-size: 1.8rem;
-    margin: 20px 0;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-}
-
-/* コンテンツ */
-.container {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 80px 5%;
+    font-family: "Yu Mincho", "HiraginoMin", Serif;
+}
+html{
+    font-size: 18px;
+    line-height: 1.2;
+}
+h1, h2, h3, p{
+    padding-bottom: 0.5rem;
 }
 
-.section-title {
-    font-size: 2rem;
+.main, .policy{
     text-align: center;
-    margin-bottom: 50px;
-    position: relative;
-    padding-bottom: 15px;
 }
 
-.section-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: var(--main-color);
+.main h2, .main p, .policy h2{
+    text-align: left;
 }
 
-.card {
-    background: var(--light-bg);
-    padding: 40px;
-    border-radius: 4px;
-    border-top: 5px solid var(--main-color);
+.bg{
+    width: 22rem;
+    padding: 1rem;
+    background-color: #e9141e;
+    color: white;
 }
-
-/* 政策グリッド */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+.top{
+    background-color: white;
+    color: #e9141e;
 }
-
-.policy-item {
-    padding: 25px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: transform 0.3s;
+.top{
+    text-align: center;
+    padding: 1rem;
 }
-
-.policy-item:hover {
-    transform: translateY(-5px);
-    border-color: var(--main-color);
+.logolike{
+    font-size: 6rem;
 }
-
-.policy-item h3 {
-    color: var(--main-color);
-    margin-top: 0;
+.slogan{
+    font-size: 1.5rem;
 }
-
-/* ボタン */
-.btn {
-    display: inline-block;
-    background: var(--white);
-    color: var(--main-color);
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 50px;
+.date{
+    color:blueviolet;
     font-weight: bold;
-    font-size: 1.1rem;
-    transition: background 0.3s, color 0.3s;
+    font-size: small;
+}
+.noti p{
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.main, .policy, .noti, .mem{
+    background-color: whitesmoke;
+    color: #000000;
+    padding: 1rem;
 }
 
-.btn:hover {
-    background: var(--dark-color);
-    color: var(--white);
-}
-
-/* フッター */
-footer {
-    background: var(--dark-color);
-    color: var(--white);
-    padding: 50px 5%;
+.end{
+    background-color: white;
+    color: #e9141e;
     text-align: center;
+    font-weight: bold;
+    padding: 2rem;
+}
+h1, h2, h3{
+    color: #e9141e;
+}
+.sec, .eco, .pol, .lib{
+    border: 0.2rem solid#000000;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+.btn{
+    font-size: large;
+    border: 0.1rem solid #e9141e ;
+    border-radius: 1rem;
+    color: #e9141e;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 2rem;
+    transition:border-color 0.3s, color 0.3s, opacity 0.3s;
+}
+.btn:hover{
+    border-color: blue;
+    color: blue;
+}
+.center{
+    text-align: center;
+}
+.mem-img{
+    display: block;
+    margin: 0 auto;
+    max-width: 20rem;
 }
