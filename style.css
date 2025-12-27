@@ -10,11 +10,11 @@ h1, h2, h3, p{
     padding-bottom: 0.5rem;
 }
 
-.main, .policy{
+.main, .policy, .ma{
     text-align: center;
 }
 
-.main h2, .main p, .policy h2{
+.main h2, .main p, .policy h2, .ma h2{
     text-align: left;
 }
 
@@ -48,10 +48,16 @@ h1, h2, h3, p{
     border-radius: 1rem;
     padding: 1rem;
 }
-.main, .policy, .noti, .mem{
+.main, .policy, .noti, .mem, .pol{
     background-color: whitesmoke;
     color: #000000;
     padding: 1rem;
+}
+.ko ul li{
+    list-style-type: square;
+}
+.ko ul{
+    padding-left: 1rem;
 }
 
 .end{
@@ -64,7 +70,7 @@ h1, h2, h3, p{
 h1, h2, h3{
     color: #e9141e;
 }
-.sec, .eco, .pol, .lib{
+.ko {
     border: 0.2rem solid#000000;
     background-color: white;
     margin-bottom: 1rem;
